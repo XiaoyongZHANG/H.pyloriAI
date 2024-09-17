@@ -1,0 +1,27 @@
+{
+    "model_name": "VGG16_GAP",
+
+    "hyp_params": {
+        "input_shape": 1024,
+        "batch_size": 16,
+        "epochs": 100,
+        "rotation_range": 180,
+        "width_shift_range": 32,
+        "height_shift_range": 32,
+        "shear_range": 0.3,
+        "zoom_range": [0.9, 1.1],
+        "horizontal_flip": true,
+        "vertical_flip": true,
+        "fill_mode": "nearest"
+    },
+
+    "dataset_info": {
+        "dataset_base_path": "/work/datasets/H.pylori_k-fold/div4",
+        "total_images": 1600,
+        "image_size": 1024,
+        "div_num": 4,
+        "labels": ["infected", "non-infected"],
+        "annotation_base_path": "/work/datasets/H.pylori_annotation/div4/3",
+        "original_path": "/work/datasets/H.pylori_original"
+    }
+}
